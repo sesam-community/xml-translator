@@ -1,0 +1,200 @@
+[
+ {
+   "ProjectId": "aasgardsubsea",
+   "ComosFacility": "F01",
+   "FacilityName": "AS",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "edvardgrieg",
+   "ComosFacility": "Edvard Grieg",
+   "FacilityName": "EG",
+   "OfficialFacilityName": "EDVARD GRIEG"
+ },
+ {
+   "ProjectId": "edvardgrieg",
+   "ComosFacility": "EG",
+   "FacilityName": "EG",
+   "OfficialFacilityName": "EDVARD GRIEG"
+ },
+ {
+   "ProjectId": "ekofiskz",
+   "ComosFacility": "2/4Z",
+   "FacilityName": "Z",
+   "OfficialFacilityName": "EKOFISK Z"
+ },
+ {
+   "ProjectId": "ekofiskz",
+   "ComosFacility": "Z",
+   "FacilityName": "Z",
+   "OfficialFacilityName": "EKOFISK Z"
+ },
+ {
+   "ProjectId": "eldfisk",
+   "ComosFacility": "2/7S",
+   "FacilityName": "S",
+   "OfficialFacilityName": "ELDFISK S"
+ },
+ {
+   "ProjectId": "eldfisk",
+   "ComosFacility": "ELDS",
+   "FacilityName": "S",
+   "OfficialFacilityName": "ELDFISK S"
+ },
+ {
+   "ProjectId": "eldfisk",
+   "ComosFacility": "ES",
+   "FacilityName": "S",
+   "OfficialFacilityName": "ELDFISK S"
+ },
+ {
+   "ProjectId": "ginakrog",
+   "ComosFacility": "Gina Krog",
+   "FacilityName": "GK",
+   "OfficialFacilityName": "GINA KROG"
+ },
+ {
+   "ProjectId": "gjoa",
+   "ComosFacility": "GJOA",
+   "FacilityName": "GJOA",
+   "OfficialFacilityName": "GJØA"
+ },
+ {
+   "ProjectId": "johancastberg",
+   "ComosFacility": "JC",
+   "FacilityName": "JC",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johancastberg",
+   "ComosFacility": "M",
+   "FacilityName": "M",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johancastberglq",
+   "ComosFacility": "JC",
+   "FacilityName": "JC",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "A",
+   "FacilityName": "A",
+   "OfficialFacilityName": "JOHAN SVERDRUP P1"
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "B",
+   "FacilityName": "B",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "D",
+   "FacilityName": "D",
+   "OfficialFacilityName": "JOHAN SVERDRUP DP"
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "L",
+   "FacilityName": "L",
+   "OfficialFacilityName": "JOHAN SVERDRUP LQ"
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "R",
+   "FacilityName": "R",
+   "OfficialFacilityName": "JOHAN SVERDRUP RP"
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "U",
+   "FacilityName": "U",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "V",
+   "FacilityName": "V",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup",
+   "ComosFacility": "W",
+   "FacilityName": "W",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "A",
+   "FacilityName": "A",
+   "OfficialFacilityName": "JOHAN SVERDRUP P1"
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "B",
+   "FacilityName": "B",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "D",
+   "FacilityName": "D",
+   "OfficialFacilityName": "JOHAN SVERDRUP DP"
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "L",
+   "FacilityName": "L",
+   "OfficialFacilityName": "JOHAN SVERDRUP LQ"
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "R",
+   "FacilityName": "R",
+   "OfficialFacilityName": "JOHAN SVERDRUP RP"
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "U",
+   "FacilityName": "U",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "V",
+   "FacilityName": "V",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "johansverdrup2",
+   "ComosFacility": "W",
+   "FacilityName": "W",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "noaka",
+   "ComosFacility": "FGD",
+   "FacilityName": "FPQ",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "noaka",
+   "ComosFacility": "FPQ",
+   "FacilityName": "FPQ",
+   "OfficialFacilityName": null
+ },
+ {
+   "ProjectId": "nyhamna",
+   "ComosFacility": "NYH",
+   "FacilityName": "NYH",
+   "OfficialFacilityName": "NYHAMNA"
+ },
+ {
+   "ProjectId": "skarv",
+   "ComosFacility": "SKARV",
+   "FacilityName": "skarv",
+   "OfficialFacilityName": "SKARV FPSO"
+ }
+]

@@ -1,0 +1,93 @@
+[
+ {
+   "ComosProject": "Aasgard",
+   "ProjectName": "Aasgard Subsea Compression",
+   "ProjectId": "aasgardsubsea",
+   "OfficialFieldName": null,
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Edvard Grieg",
+   "ProjectName": "Edvard Grieg",
+   "ProjectId": "edvardgrieg",
+   "OfficialFieldName": "EDVARD GRIEG",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Ekofisk Z",
+   "ProjectName": "Ekofisk Z",
+   "ProjectId": "ekofiskz",
+   "OfficialFieldName": "EKOFISK Z",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Eldfisk",
+   "ProjectName": "Eldfisk",
+   "ProjectId": "eldfisk",
+   "OfficialFieldName": "ELDFISK",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Gina Krog",
+   "ProjectName": "Gina Krog",
+   "ProjectId": "ginakrog",
+   "OfficialFieldName": "GINA KROG",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "GJOA",
+   "ProjectName": "GJØA",
+   "ProjectId": "gjoa",
+   "OfficialFieldName": "GJØA",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "JC-LQ",
+   "ProjectName": "Johan Castberg Living Quarters",
+   "ProjectId": "johancastberglq",
+   "OfficialFieldName": "JOHAN CASTBERG",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Johan Castberg",
+   "ProjectName": "Johan Castberg",
+   "ProjectId": "johancastberg",
+   "OfficialFieldName": "JOHAN CASTBERG",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Johan Sverdrup",
+   "ProjectName": "Johan Sverdrup",
+   "ProjectId": "johansverdrup",
+   "OfficialFieldName": "JOHAN SVERDRUP",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "Johan Sverdrup Phase2",
+   "ProjectName": "Johan Sverdrup Phase2",
+   "ProjectId": "johansverdrup2",
+   "OfficialFieldName": "JOHAN SVERDRUP",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "NOAKA",
+   "ProjectName": "NOAKA PROJECT",
+   "ProjectId": "noaka",
+   "OfficialFieldName": null,
+   "isActive": "Y"
+ },
+ {
+   "ComosProject": "Nyhamna",
+   "ProjectName": "Nyhamna",
+   "ProjectId": "nyhamna",
+   "OfficialFieldName": "NYHAMNA LANDANLEGG",
+   "isActive": "N"
+ },
+ {
+   "ComosProject": "SKARV",
+   "ProjectName": "Skarv",
+   "ProjectId": "skarv",
+   "OfficialFieldName": "SKARV",
+   "isActive": "N"
+ }
+]
