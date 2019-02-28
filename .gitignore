@@ -2,3 +2,5 @@
 service/google-store-credentials.json
 __pycache__/
 venv/
+facility_id_mapping.json
+project_id_mapping.json
