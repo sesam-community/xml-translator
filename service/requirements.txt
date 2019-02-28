@@ -1,4 +1,5 @@
-xmltodict==0.11.0
-requests==2.20.0
-Flask==0.11
-google-cloud-storage
+xmltodict==0.12.0
+requests==2.21.0
+Flask==1.0.2
+google-cloud-storage==1.14.0
+waitress==1.2.1

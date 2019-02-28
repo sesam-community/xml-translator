@@ -5,14 +5,16 @@ from flask import abort
 
 # class for reading files from a Google cloud storage
 class GoogleCloudStorage:
+    """
+     initiate class, the class is taking the path to the file storing the credentials for the Google cloud storage,
+     the credentials itself, and the name of the bucket where the xml files resides as parameters
+    """
 
-    # initiate class, the class is taking the path to the file storing the credentials for the Google cloud storage,
-    # the credentials itself, and the name of the bucket where the xml files resides as parameters
     def __init__(self, credentialspath, credentials, bucketname):
         # write the content of the credentials to the path specified by credentialspath
-        with open(credentialspath, "wb") as out_file:
-            out_file.write(credentials.encode())
-
+        if credentials:
+            with open(credentialspath, "wb") as out_file:
+                out_file.write(credentials.encode())
         self.bucket = bucketname
         pass
 
