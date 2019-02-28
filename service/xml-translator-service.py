@@ -9,7 +9,6 @@ import logger
 from waitress import serve
 from googlecloudstorage import GoogleCloudStorage
 from dotdictify import Dotdictify
-from prof import profile, print_prof_data, clear_prof_data
 
 import subprocess
 import tempfile
