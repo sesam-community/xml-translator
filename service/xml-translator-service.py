@@ -70,7 +70,7 @@ def parsexml(xml):
     # standalone exe call approach
     logger.info("Parsing xml file {}".format(xml))
     start_time = time.time()
-    result = subprocess.run(['./xml2json', xml], stdout=subprocess.PIPE)
+    result = subprocess.run(['/xml2json/xml2json', xml], stdout=subprocess.PIPE)
     logger.info("Parsed in {} seconds".format(time.time() - start_time))
     return result.stdout
     # ctypes approach
