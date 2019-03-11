@@ -13,15 +13,15 @@
 #include "rapidxml/rapidxml_utils.hpp"
 #include "rapidxml/rapidxml_print.hpp"
 
-#include "rapidjson/document.h"
-#include "rapidjson/prettywriter.h"
-#include "rapidjson/encodedstream.h"
-#include "rapidjson/stringbuffer.h"
-#include "rapidjson/reader.h"
-#include "rapidjson/writer.h"
-#include "rapidjson/filereadstream.h"
-#include "rapidjson/filewritestream.h"
-#include "rapidjson/error/en.h"
+#include "rapidjson/include/rapidjson/document.h"
+#include "rapidjson/include/rapidjson/prettywriter.h"
+#include "rapidjson/include/rapidjson/encodedstream.h"
+#include "rapidjson/include/rapidjson/stringbuffer.h"
+#include "rapidjson/include/rapidjson/reader.h"
+#include "rapidjson/include/rapidjson/writer.h"
+#include "rapidjson/include/rapidjson/filereadstream.h"
+#include "rapidjson/include/rapidjson/filewritestream.h"
+#include "rapidjson/include/rapidjson/error/en.h"
 
 /* [Start] This part is configurable */
 static const char xml2json_text_additional_name[] = "#text";
