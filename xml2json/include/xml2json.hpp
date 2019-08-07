@@ -8,6 +8,7 @@
 #include <map>
 #include <string>
 #include <cctype>
+#include <vector>
 
 #include "rapidxml/rapidxml.hpp"
 #include "rapidxml/rapidxml_utils.hpp"
@@ -245,7 +246,6 @@ void xml2json_traverse_node(rapidxml::xml_node<> *xmlnode, rapidjson::Value &jsv
 		//file<> fdoc("track_orig.xml"); // could serve another use case
 		rapidxml::xml_document<> *xml_doc = new rapidxml::xml_document<>();
 		xml_doc->parse<0> (const_cast<char *>(xml_str));
-
 		rapidjson::Document js_doc;
 		js_doc.SetObject();
 		rapidjson::Document::AllocatorType& allocator = js_doc.GetAllocator();
@@ -261,7 +261,6 @@ void xml2json_traverse_node(rapidxml::xml_node<> *xmlnode, rapidjson::Value &jsv
 			xml2json_traverse_node(xmlnode_chd, jsvalue_chd, allocator);
 			js_doc.AddMember(rapidjson::StringRef(xmlnode_chd->name()), jsvalue_chd, allocator);
 		}
-
 		rapidjson::StringBuffer buffer;
 		rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
 		js_doc.Accept(writer);
@@ -271,8 +270,9 @@ void xml2json_traverse_node(rapidxml::xml_node<> *xmlnode, rapidjson::Value &jsv
 extern "C" {
 	const char * xml2json_c(const char *xml_str)
 	{
-		std::string result = xml2json(xml_str);
-		return result.c_str();
+                static std::string result;
+		result = xml2json(xml_str);
+                return result.c_str();
 	}
 }
 

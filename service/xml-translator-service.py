@@ -5,6 +5,7 @@ import json
 import time
 import os
 import logger
+import ctypes
 
 from waitress import serve
 from googlecloudstorage import GoogleCloudStorage
@@ -15,9 +16,9 @@ import tempfile
 
 # import ctypes
 
-# xml2json_lib = ctypes.cdll.LoadLibrary("./xml2json.so")
-# xml2json_lib.xml2json_c.argtypes = [ctypes.c_char_p]
-# xml2json_lib.xml2json_c.restype = ctypes.c_char_p
+xml2json_lib = ctypes.cdll.LoadLibrary("./xml2json.so")
+xml2json_lib.xml2json_c.argtypes = [ctypes.c_char_p]
+xml2json_lib.xml2json_c.restype = ctypes.c_char_p
 
 app = Flask(__name__)
 logger = logger.Logger("xml-translator-service")
@@ -67,14 +68,8 @@ facilitytname_mapping = json.loads(os.environ.get('facility_mapping').replace("'
 
 # parse xml and return an ordered dictionary
 def parsexml(xml):
-    # standalone exe call approach
-    logger.info("Parsing xml file {}".format(xml))
-    start_time = time.time()
-    result = subprocess.run(['/xml2json/xml2json', xml], stdout=subprocess.PIPE)
-    logger.info("Parsed in {} seconds".format(time.time() - start_time))
-    return result.stdout
     # ctypes approach
-    # return xml2json_lib.xml2json_c(ctypes.c_char_p(xml))
+    return xml2json_lib.xml2json_c(ctypes.c_char_p(xml))
 
 
 # determine id of entity, either using a known id from the source or by using projectname mapping
@@ -149,16 +144,13 @@ class DataAccess:
             xml_as_byte_string = google_cloud_storage.download(xml_file_name)
             logger.info(
                 "File {} downloaded in {} seconds".format(xml_file_name, time.time() - start_time))
-            with tempfile.NamedTemporaryFile() as f:
-                f.write(xml_as_byte_string)
-                logger.info("created tmp file {}".format(f.name))
-                json_str = parsexml(f.name)
-                try:
-                    for entity in Dotdictify(json.loads(json_str.decode("utf-8")))[root_key][element_key]:
-                        yield process_entities(entity)
-                except KeyError as e:
-                    logger.error("KeyError occured: {} not found".format(str(e)))
-                    raise e
+            json_str = parsexml(xml_as_byte_string)
+            try:
+                for entity in Dotdictify(json.loads(json_str.decode("utf-8")))[root_key][element_key]:
+                    yield process_entities(entity)
+            except KeyError as e:
+                logger.error("KeyError occured: {} not found".format(str(e)))
+                raise e
 
     def get_xml(self, path, args):
         # print('getting list')

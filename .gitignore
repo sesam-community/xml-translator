@@ -1,4 +1,6 @@
 .idea/
+.pytest_cache
+test_script.py
 service/google-store-credentials.json
 __pycache__/
 venv/
